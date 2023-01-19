@@ -8,10 +8,13 @@ body{
 }
 
 .banner{
-    height: 208vh;
+    height: 210vh;
+    background-color: black;
     background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(house.jpg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+
 }
 
 .navbar{
@@ -79,7 +82,7 @@ nav ul li:hover::after{
     background: #ff523b;
     color: aliceblue;
     padding: 10px 40px;
-    margin: 50px 140px;
+    margin: 40px 150px;
     border-radius: 30px;
     transition: background 0.5s;
 }
@@ -87,9 +90,26 @@ nav ul li:hover::after{
     background: #563434;
 }
 .categories{
-    margin:  70px 0;
+    margin:  20px 0;
 }
-.col-3{
+.title{
+    margin:0 auto 50px;
+    position: relative;
+    line-height: 60px;
+    color: #fff;
+}
+.title::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    transform: translateX();
+}
+.col-3{   
     flex-basis: 20%;
     min-width: 250px;
     margin-bottom: 30px;
@@ -174,17 +194,5 @@ nav ul li:hover::after{
 }
 .col-4:hover .middle{
     opacity: 1;
-}
-
-.socialhandles{
-    display: inline-block;
-    height: 60px;
-    width: 60px;
-    float: left;
-    margin: 0px 5px;
-    overflow: hidden;
-    border-radius: 50px;
-    cursor: pointer;
-    
 }
 
