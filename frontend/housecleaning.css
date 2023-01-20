@@ -7,44 +7,39 @@ body{
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
+/*----------------footer*----------------*/
+ footer{
+        position: relative;
+        width: 100%;
+        background-color: rgb(43, 42, 42);
+        min-height: 100px;
+        color: #fffefe;
+        font-size: 14px;
+        padding: 20px 10px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        
 
-.navbar{
-    color: rgb(8, 8, 8);
-    width: 100%;
-    margin: auto;
-    display: block;
-    align-items: center;
-    padding: 25px 0;
-    justify-content: space-between;
-   
-}
-
-.container{
-    max-width: 1300px;
-    margin: auto;
-    margin-left: 25px;
-    margin-right: 25px;
-}
-.container h1{
-    color: rgb(8, 8, 8);
-    align-items: center;
-}
-.small-container{
-    max-width: 1080px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-    color: black;
-}
-.col-1{
-    flex-basis: 25%;
-    padding: 20px;
-    min-width: 200px;
-    margin-bottom: 50px;
-}
-.col-1 img{
-    width: 100%;
-
-
-
-}
+    }
+    footer .social_icon{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 0px;
+    
+    }
+    footer .social_icon li{
+        list-style: none;
+    }
+    footer .social_icon li a{
+        font-size:  2em;
+        color: #fff;
+        margin: 0 50px;
+        display: inline-block;
+        transition: 0.5s;
+    }
+    footer .social_icon li a:hover{
+        transform: translateY(-10px);
+    }
