@@ -7,19 +7,9 @@ body{
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
-.banner{
-    color: aliceblue;
-    height: 210vh;
-    background-color: black;
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(house.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-
-}
 
 .navbar{
-    color: aliceblue;
+    color: rgb(8, 8, 8);
     width: 100%;
     margin: auto;
     display: block;
@@ -36,6 +26,25 @@ body{
     margin-right: 25px;
 }
 .container h1{
-    color: aliceblue;
+    color: rgb(8, 8, 8);
     align-items: center;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: black;
+}
+.col-1{
+    flex-basis: 25%;
+    padding: 20px;
+    min-width: 200px;
+    margin-bottom: 50px;
+}
+.col-1 img{
+    width: 100%;
+
+
+
 }
