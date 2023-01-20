@@ -3,10 +3,11 @@
     padding: 0;
     }
 
-    .body{
-        background: url(house.jpg) no-repeat center center fixed;
-        background-size: cover; 
+    body{
+        font-family: 'IBM Plex Sans', sans-serif;
     }
+    
+
 
     .container{ 
         color: black;
