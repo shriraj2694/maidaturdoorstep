@@ -5,7 +5,7 @@ var mongoose = require("mongoose")
 const app = express()
 
 app.use(bodyParser.json())
-app.use(express.static('public'))
+app.use(express.static('frontend'))
 app.use(bodyParser.urlencoded({
     extended:true
 }))
@@ -34,7 +34,7 @@ app.post("/signup", (req,res)=>{
         console.log("Record inserted successfully");
     });
 
-    return res.redirect('sigin.html');
+    return res.redirect('signin.html');
 })
 
 app.get("/", (req,res) => {
