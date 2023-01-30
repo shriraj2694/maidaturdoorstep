@@ -5,16 +5,23 @@ var mongoose = require("mongoose")
 const app = express()
 
 app.use(bodyParser.json())
-app.use(express.static('frontend'))
+app.use(express.static('signin.html'))
 app.use(bodyParser.urlencoded({
     extended:true
 }))
 
-mongoose.connect('mongodb://localhost:27017/signin');
+mongoose.connect('mongodb://localhost:27017/MaidAtUrDoorstep/login',{
+    useNewUrlParser:true,
+    useUnifiedTopology:true
+});
+mongoose.set('strictQuery', false);
 
 var db = mongoose.connection;
 
-app.post("/signup", (req,res)=>{
+db.on('error', ()=>console.log("error in db"));
+db.once('open', ()=>console.log("connected"));
+
+app.post("/login", (req,res)=>{
     var name = req.body.name;
     var email = req.body.email;
     var phone = req.body.phone;
