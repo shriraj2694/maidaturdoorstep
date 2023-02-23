@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/*----------------footer*----------------*/
+ footer{
+        position: relative;
+        width: 100%;
+        background-color: rgb(43, 42, 42);
+        min-height: 100px;
+        color: white;
+        font-size: 14px;
+        padding: 20px 10px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        
+
+    }
+    footer .social_icon{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 0px;
+    
+    }
+    footer .social_icon li{
+        list-style: none;
+    }
+    footer .social_icon li a{
+        font-size:  2em;
+        color: #fff;
+        margin: 0 50px;
+        display: inline-block;
+        transition: 0.5s;
+    }
+    footer .social_icon li a:hover{
+        transform: translateY(-10px);
+    }
