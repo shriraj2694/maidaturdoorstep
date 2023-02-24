@@ -11,6 +11,7 @@
     "express": "^4.18.2",
     "maidaturdoorstep": "file:",
     "mongoose": "^6.9.0",
+    "nodemailer": "^6.9.1",
     "nodemon": "^2.0.20",
     "npm": "^8.19.3",
     "passport": "^0.6.0",
