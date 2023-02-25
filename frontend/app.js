@@ -59,7 +59,7 @@ app.use('/css', express.static(__dirname + '/css'));
 
 // Showing home page
 app.get("/", function (req, res) {
-	res.render("home");
+	res.render("index");
 });
 // Showing about
 app.get("/about", function (req, res) {
@@ -191,7 +191,7 @@ app.get('/', function (req, res) {
     if(req.session.loggedin){
         user = req.session.name;
     }
-    res.render('home', { user: user });
+    res.render('index', { user: user });
 });
 
 
